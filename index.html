@@ -1,12 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedikúra a Masáže</title>
+    <meta name="description" content="Profesionální pedikúra a masáže od Táni. Rezervujte se online.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <H1>Dobrý den vítejte na mém webu</H1>
 
+<body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <img src="hero_spa_bg.png" alt="Pedikúra logo" class="logo-img" onerror="this.style.display='none';">
+                <span class="logo-text">Pedikúra a Masáže u Táňi</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Otevřít menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Úvod</a></li>
+                    <li><a href="#pricing" class="nav-link">Ceník</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-title-box">
+                    <h1 class="hero-title">Pedikúra a Masáže u Táňi</h1>
+                </div>
+                <div class="hero-address-box">
+                    <p class="hero-address"><i class="fa-solid fa-location-dot"></i>Brněnská 563/48 586 01 Jihlava</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#booking" class="btn btn-primary">Rezervovat služby</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Grid / Yellow Section -->
+        <section id="booking" class="info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <!-- Column 1: Booking / Rezervace -->
+                    <div class="info-card booking-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <h2>Rezervace online</h2>
+                        <a href="https://rezervace.priklad.cz" class="btn btn-secondary" target="_blank"
+                            rel="noopener">Přejít k rezervaci</a>
+                        <div class="alert-box">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p><strong>Stop stav pro nové zákazníky</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Feet Image -->
+                    <div class="info-card image-card">
+                        <div class="feet-image-wrapper">
+                            <img src="pedicure_feet.png" alt="Profesionální pedikúra" class="feet-image">
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Opening Hours / Otvírací doba -->
+                    <div class="info-card hours-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h2>Otevírací doba</h2>
+                        <table class="hours-table">
+                            <tbody>
+                                <tr>
+                                    <th>Pondělí</th>
+                                    <td>07:30 - 15:00</td>
+                                </tr>
+                                <tr>
+                                    <th>Úterý</th>
+                                    <td>12:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <th>Středa</th>
+                                    <td>07:30 - 15:00</td>
+                                </tr>
+                                <tr>
+                                    <th>Čtvrtek</th>
+                                    <td>12:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <th>Pátek</th>
+                                    <td>07:30 - 13:00</td>
+                                </tr>
+                                <tr class="maybe-open-days">
+                                    <th>Sobota</th>
+                                    <td>dle domluvy</td>
+                                </tr>
+                                <tr class="closed-days">
+                                    <th>Neděle</th>
+                                    <td>Zavřeno</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O nás Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Profesionální péče o vaše nohy</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Vítejte v salonu Pedikúra a masáže u Táňi. Nabízím komplexní péči o vaše nohy a tělo.
+                            příjemném a
+                            relaxačním prostředí. Specializuji se na suchou přístrojovou pedikúru, ošetření otlaků,
+                            kuřích ok i zarůstajících nehtů.</p>
+                        <p>Kladu důraz na stoprocentní hygienu, individuální přístup a použití špičkové profesionální
+                            kosmetiky. Vaše nohy si zaslouží tu nejlepší péči, protože vás nosí celý život.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ceník Section -->
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ceník služeb</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Kontakt</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-user"></i>
+                            <div>
+                                <h4>Taťána Vospělová</h4>
+                                <p>Diplomovaná pedikérka a masérka</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+777 968 400 ">+420 777 968 400 </a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:info@pedikuraluka.cz">info@pedikuraluka.cz</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Adresa</h4>
+                                <p>Brněnská 563/48 586 01 Jihlava</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <!-- Simulated professional clean map placeholder -->
+                        <div class="map-placeholder">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Mapa - Brněnská 563/48 586 01 Jihlava</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Simple Script for Mobile Menu -->
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function () {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mainNav').classList.remove('active');
+
+                // Set active class
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
 </body>
+
 </html>
