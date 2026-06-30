@@ -2,24 +2,24 @@
    Design System & Variables
    ========================================================================== */
 :root {
-    --primary-color: #f7d560;
-    /* Luxurious gold/warm yellow */
-    --primary-dark: #d4a017;
-    /* Darker gold for hovers */
-    --primary-light: #fef9e7;
-    /* Soft light gold background */
-    --secondary-color: #333333;
-    /* Elegant charcoal black */
-    --accent-color: #e67e22;
-    /* Warm amber accent */
-    --text-color: #4a4a4a;
-    /* Soft dark grey for readable text */
-    --text-light: #777777;
-    /* Muted grey for subtexts */
+    --primary-color: #389f99;
+    /* Luxurious spa turquoise */
+    --primary-dark: #22706c;
+    /* Darker turquoise for hovers */
+    --primary-light: #eff8f8;
+    /* Soft light turquoise background */
+    --secondary-color: #382a1f;
+    /* Elegant espresso brown */
+    --accent-color: #b37d56;
+    /* Warm caramel accent brown */
+    --text-color: #4e443c;
+    /* Dark grey-brown for readable text */
+    --text-light: #807368;
+    /* Muted grey-brown for subtexts */
     --bg-white: #ffffff;
-    --bg-warm: #faf7f2;
-    /* Off-white warm spa background */
-    --border-color: #eae6df;
+    --bg-warm: #fcfaf5;
+    /* Warm cream spa background */
+    --border-color: #e6e0d5;
 
     /* Fonts */
     --font-heading: 'Playfair Display', Georgia, serif;
@@ -126,7 +126,7 @@ img {
 }
 
 .btn-secondary:hover {
-    background-color: #000000;
+    background-color: #241810;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
@@ -148,9 +148,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 1rem 2rem;
+    max-width: 100%;
+    padding: 1rem 1.5rem;
 }
 
 .logo-wrapper {
@@ -171,6 +170,7 @@ img {
     font-weight: 700;
     color: var(--secondary-color);
     letter-spacing: 1px;
+    text-align: left;
 }
 
 .nav-toggle {
@@ -180,6 +180,10 @@ img {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--secondary-color);
+}
+
+.main-nav {
+    margin-right: 6rem;
 }
 
 .main-nav ul {
@@ -283,11 +287,17 @@ img {
     font-size: 1.1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
-.hero-address i {
+.hero-address {
     color: var(--accent-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .hero-cta {
@@ -298,7 +308,7 @@ img {
    Info Grid / Yellow Section
    ========================================================================== */
 .info-section {
-    background: linear-gradient(135deg, #f7d560 0%, #f4c430 100%);
+    background: linear-gradient(135deg, #48aca7 0%, #257874 100%);
     padding: 4rem 0;
     margin-bottom: 4rem;
     box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.03), inset 0 -10px 20px rgba(0, 0, 0, 0.03);
@@ -360,7 +370,7 @@ img {
 }
 
 .alert-box {
-    background-color: #fff9e6;
+    background-color: #eaf7f6;
     border-left: 4px solid var(--accent-color);
     padding: 0.75rem 1rem;
     border-radius: 4px;
@@ -544,6 +554,37 @@ section:not(.hero-section):not(.info-section) {
 }
 
 /* ==========================================================================
+   Fotogalerie Section
+   ========================================================================== */
+.gallery-section {
+    background-color: var(--bg-white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.gallery-item {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    height: 350px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
    Kontakt Section
    ========================================================================== */
 .contact-grid {
@@ -609,7 +650,7 @@ section:not(.hero-section):not(.info-section) {
 .map-placeholder {
     width: 100%;
     height: 100%;
-    background-color: #eae6df;
+    background-color: #e8e2d7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -694,6 +735,7 @@ section:not(.hero-section):not(.info-section) {
         top: 100%;
         left: 0;
         right: 0;
+        margin-right: 0;
         background-color: var(--bg-white);
         border-bottom: 1px solid var(--border-color);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
